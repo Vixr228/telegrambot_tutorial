@@ -18,3 +18,5 @@ That's all.
 docker-compose build --build-arg username="my-user" --build-arg password="my-pass"
 
 docker-compose build --build-arg BOT_NAME="test_tutorial_java_telegram_bot" --build-arg BOT_TOKEN="5410998440:AAHJN2kZy9u4xMzB4N1F1EWa5etRKaWGMR4"
+
+docker-compose -f docker-compose-test.yml up
