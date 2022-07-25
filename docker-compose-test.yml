@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  jrtb-db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_DATABASE: dev_jrtb_db
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      # <Port exposed> : <MySQL Port running inside container>
+      - '3307:3306'
+    expose:
+      # Opens port 3307 on the container
+      - '3307'
+
